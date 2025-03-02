@@ -1,0 +1,121 @@
+.services_intro {
+    width: 90%;
+    margin: 20px auto;
+}
+
+table {
+    font-family: var(--f1);
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid var(--c10);
+    text-align: center;
+    padding: 20px;
+}
+
+tr:nth-child(even) {
+    background-color: var(--c10);
+}
+
+th:nth-child(3), #grey_bars {
+    background-color: var(--c10);
+}
+
+th:nth-child(4), #blue_bars {
+    background-color: var(--c1);
+    color: var(--c4);
+}
+
+th:nth-child(5), #yellow_bars {
+    background-color: var(--c2);
+}
+
+th img {
+    height: 150px;
+    width: 200px;
+    border: 3px solid var(--c2);
+    /* margin: -20px -20px -24px -20px; */
+}
+
+/* th:nth-child(1) {
+    background-color: var(--c2);
+} */
+
+td a {
+    text-decoration: none;
+    color: var(--c5);
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+#grey_icons .fa {
+    color: var(--c11);
+}
+
+#blue_icons .fa {
+    color: var(--c1);
+}
+
+#yellow_icons .fa {
+    color: var(--c2);
+}
+
+#blue_bars a {
+    color: var(--c4);
+}
+
+tr:nth-child(8) .fa {
+    margin-right: 5px;
+}
+
+.services_note {
+    display: none;
+}
+
+#titles {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 414px) {
+    .services_intro {
+        width: 80%;
+    }
+    th, td {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+    }
+    tr:nth-child(even) {
+        background-color: var(--c4);
+    }
+    .grey_bars_resp {
+        background-color: var(--c10);
+    }
+    .blue_bars_resp {
+        background-color: var(--c1);
+        color: var(--c4);
+    }
+    .yellow_bars_resp {
+        background-color: var(--c2);
+    }
+    .services_note {
+        width: 80%;
+        display: block;
+        margin: 50px auto;
+    }
+    .services_note p {
+        text-align: center;
+        font-family: var(--f1);
+        font-size: var(--s5);
+        color: var(--c1);
+    }
+    .services_note p span {
+        text-decoration: underline var(--c1);
+    }
+}

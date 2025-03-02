@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agents From District | Real Estate</title>
+    <link rel="stylesheet" href="agents_from_district.css">
+    <link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="nav_and_footer.css">
+    <script src="responsive_nav.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="pictures/beiteck_logo_icon.jpg">
+</head>
+<body>
+    <div class="intro">
+        <nav>
+            <a href="index.html"><img id="logo" src="pictures/beiteck_logo.png"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="buy.html">Buy</a></li>
+                <li><a href="rent.html">Rent</a></li>
+                <li><a href="about.html">About</a></li>
+                <div class="dropdown">
+                    <li>Agents <br><i class="fa fa-sort-desc" aria-hidden="true"></i></li>
+                    <div class="dropdown-content">
+                        <li><a href="agent.html">Find An Agent</a></li>
+                        <li><a id="dropdown_active" href="agents_from_district.html">Agents From District</a></li>
+                    </div>
+                </div>
+                <li><a href="agencies.html">Agencies</a></li>
+                <li><a href="sell.html">Sell | Post A Listing</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="#footer">Contact</a></li><hr id="nav_hr">
+                <li><a id="after_hr" href="login.html">Login</a></li><hr id="nav_hr">
+                <li><a id="after_hr" href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Simulate a smartphone / tablet -->
+    <div class="mobile-container">
+
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+            <a href="index.html"><img id="logo_resp" src="pictures/beiteck_logo.png"></a>
+            <div id="myLinks">
+                <a href="index.html">Home</a>
+                <a href="buy.html">Buy</a>
+                <a href="rent.html">Rent</a>
+                <a href="about.html">About</a>
+                <a href="agent.html">Find An Agent</a>
+                <a id="active" href="agents_from_district.html">Agents From District</a>
+                <a href="agencies.html">Agencies</a>
+                <a href="sell.html">Sell | Post A Listing</a>
+                <a href="services.html">Services</a>
+                <a href="#footer">Contact</a><hr id="nav_hr">
+                <a href="login.html">Login</a><hr id="nav_hr">
+                <a href="signup.html">Sign Up</a>
+            </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        </div>
+        
+        <!-- End smartphone / tablet look -->
+        </div>
+
+        <div class="agent_from">
+            <p>Find Agent</p>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <!-- hon esm ldistrict li huwe bikun variable -->
+            <p id="district">Beirut</p>
+        </div>
+
+        <div id="shadow_hr"></div>
+
+        <div class="agent_filters">
+            <!-- li bel span nafs variable li huwe l district yaane lmaken aw lmanta2a -->
+            <h2>Real estate agents in <span>Beirut</span>, Lebanon</h2>
+            <div class="first_row_filter">
+                <div class="agent_btns">
+                    <a href="agents_from_district.html"><button id="agents">Agents</button></a>
+                    <a href="agencies.html"><button id="agencies">Agencies</button></a>
+                </div>
+                <div class="search_district_bar">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <input type="search" value="Beirut">
+                </div>
+            </div>
+            <div class="second_row_filter">
+                <div class="agent_sort_by">
+                    <h4>Sort by</h4>
+                    <select>
+                        <option selected>Suburb Sales & Performance</option>
+                        <option>Property Sales (As Lead Agent)</option>
+                        <option>Nb Of Reviews</option>
+                        <option>Median Sold Price</option>
+                        <option>Median Days Advertised</option>
+                        <option>Years Experience</option>
+                        <option>Total Sales Across All Suburbs</option>
+                    </select>
+                </div>
+            </div>
+            <div class="third_row_filter">
+                <h4>Property sales type</h4>
+                <div class="sales_btns">
+                    <a href="#"><button>All</button></a>
+                    <a href="#"><button>House</button></a>
+                    <a href="#"><button>Unit & Apartment</button></a>
+                    <a href="#"><button>Land</button></a>
+                    <a href="#"><button>Townhouse</button></a>
+                    <a href="#"><button>Rural</button></a>
+                    <a href="#"><button>Villa</button></a>
+                    <a href="#"><button>Acreage</button></a>
+                    <a href="#"><button>Block Of Units</button></a>
+                    <a href="#"><button>Retirement Living</button></a>
+                </div>
+            </div>
+            <div class="fourth_row_filter">
+                <h4>Timeframe</h4>
+                <select id="timeframe">
+                    <option>24 Months</option>
+                    <option selected>12 Months</option>
+                    <option>6 Months</option>
+                    <option>3 Months</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="shadow_hr"></div>
+
+        <div class="showing_results">
+            <p>Showing</p>
+            <!-- li bel span hyda variable bifarjina adde fi results bl page -->
+            <p id="results"><span>305</span> results</p>
+            <br>
+        </div>
+        <div class="i">
+            <p>Suburb Sales & Performance <span><i class="fa fa-info" aria-hidden="true"></i></span></p>
+            <p class="tooltip">Suburb Sales & Performance <br><br><span>Suburb sales and performance ranks agents based on a combination of sold data, reviews, days advertised and median sale price. </span></p>
+        </div>
+
+        <hr>
+
+        <!-- ta2riban dayman 3am 7ot l variables b span la tkun l2mur awdah -->
+        <div class="agent_cats">
+            <div class="agent_cat">
+                <div class="campaign_logo">
+                    <img src="pictures/morton.png">
+                </div>
+                <div class="agent_info">
+                    <a href="agent_profile.html"><img id="profile_pic" src="pictures/profile_pic.png"></a>
+                    <div class="agent_details">
+                        <a href="agent_profile.html"><h3>Ethan Fowler</h3></a>
+                        <p><i class="fa fa-star" aria-hidden="true"></i> <span id="rate">5.0</span> ( <span id="reviews">295</span> reviews)</p>
+                        <p><span id="reviews_last12months">59</span> reviews in last 12 months</p>
+                        <p id="status">Sales Executive</p>
+                        <!-- campaign name with district (district yaane wen masalan beirut) -->
+                        <p><span id="campaign_name">morton</span> - <span id="district">Beirut</span></p>
+                    </div>
+                </div>
+                <div class="agent_additional_infos">
+                    <div class="agent_achievements">
+                        <div class="agent_achievements_details">
+                            <p><span id="district">Beirut</span>, Lebanon</p>
+                            <div class="agent_achievements_nbs">
+                                <p><span id="properties_sold">29</span> <br>Properties Sold</p>
+                                <p><span id="median_sold_price">$ 1.27 m</span> <br>Median Sold Price</p>
+                                <p><span id="median_days_advertised">27</span> <br>Median Days Advertised</p>
+                            </div>
+                        </div>
+                        <div class="agent_suburbs">
+                            <p>All Suburbs</p>
+                            <div class="agent_achievements_nbs">
+                                <p><span id="suburbs_properties_sold">38</span> <br>Properties Sold</p>
+                            </div>
+                        </div>
+                        <div class="agent_achievements_btn">
+                            <a href="agent_profile.html"><button>Add To Compare</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="agent_rating">
+                    <div class="agent_rating_header">   
+                        <p id="stars"><span>
+                            <i class="fa fa-star" aria-hidden="true"></i> 
+                            <i class="fa fa-star" aria-hidden="true"></i> 
+                            <i class="fa fa-star" aria-hidden="true"></i> 
+                            <i class="fa fa-star" aria-hidden="true"></i> 
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </span></p> <p>Rating From A Seller</p>
+                        <p id="verified"><i class="fa fa-check-circle-o" aria-hidden="true"></i> Verified Review</p>
+                    </div>
+                    <p id="agent_rating_text">Ethan had the knowledge and expertise required to make 
+                        the process seamless in the <u>Beirut</u> area. We wanted an early settlement 
+                        and he was able to find a buyer who wanted the same. 
+                        He provided weekly updates and made sure we were across 
+                        everything that was happening. We would not hesitate to 
+                        recommend Ethan to prospective sellers. </p>
+                </div>
+            </div>
+
+            <div class="agent_cat">
+                <div class="campaign_logo">
+                    <img src="pictures/sydney_cove__property.png">
+                </div>
+                <div class="agent_info">
+                    <a href="agent_profile.html"><img id="profile_pic" src="pictures/profile_pic_2.jpeg"></a>
+                    <div class="agent_details">
+                        <a href="agent_profile.html"><h3>Monique Lavers</h3></a>
+                        <p><i class="fa fa-star" aria-hidden="true"></i> <span id="rate">5.0</span> ( <span id="reviews">6</span> reviews)</p>
+                        <p><span id="reviews_last12months">3</span> reviews in last 12 months</p>
+                        <p id="status">Director</p>
+                        <!-- campaign name with district (district yaane wen masalan beirut) -->
+                        <p><span id="campaign_name">Sydney Cove Property - The Rocks</span> - <span id="district">Beirut</span></p>
+                    </div>
+                </div>
+                <div class="agent_additional_infos">
+                    <div class="agent_achievements">
+                        <div class="agent_achievements_details">
+                            <p><span id="district">Beirut</span>, Lebanon</p>
+                            <div class="agent_achievements_nbs">
+                                <p><span id="properties_sold">24</span> <br>Properties Sold</p>
+                                <p><span id="median_sold_price">$ 872 k</span> <br>Median Sold Price</p>
+                                <p><span id="median_days_advertised">55</span> <br>Median Days Advertised</p>
+                            </div>
+                        </div>
+                        <div class="agent_suburbs">
+                            <p>All Suburbs</p>
+                            <div class="agent_achievements_nbs">
+                                <p><span id="suburbs_properties_sold">41</span> <br>Properties Sold</p>
+                            </div>
+                        </div>
+                        <div class="agent_achievements_btn">
+                            <a href="agent_profile.html"><button>Add To Compare</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="agent_rating">
+                    <div class="agent_rating_header">   
+                        <p id="stars"><span>
+                            <i class="fa fa-star" aria-hidden="true"></i> 
+                            <i class="fa fa-star" aria-hidden="true"></i> 
+                            <i class="fa fa-star" aria-hidden="true"></i> 
+                            <i class="fa fa-star" aria-hidden="true"></i> 
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </span></p> <p>Rating From A Seller</p>
+                        <p id="verified"><i class="fa fa-check-circle-o" aria-hidden="true"></i> Verified Review</p>
+                    </div>
+                    <p id="agent_rating_text">Monique was just wonderful 
+                        to deal with throughout the whole sales process 
+                        of our property. She has excellent communication 
+                        skills and her expertise showed on all her answers 
+                        to our questions. I would absolutely use Monique 
+                        again in our future real estate decisions and am highly 
+                        recommending her to anyone seeking a knowledgeable agent 
+                        in the <u>Beirut</u> area. </p>
+                </div>
+            </div>
+
+        </div>
+
+            <div class="last">
+                <div class="pages">
+                    <div class="pages_btns">
+                        <a id="pages_active" href="#"><button>1</button></a>
+                        <a href="#"><button>2</button></a>
+                        <p>...</p>
+                        <a href="#"><button>14</button></a>
+                        <a href="#"><button id="next">Next <i class="fa fa-angle-right" aria-hidden="true"></i></button></a>
+                    </div>
+                </div>
+                <div class="results">
+                    <p>Showing <span>1</span> - <span>12</span> of <span>162</span> results</p>
+                </div>
+            </div><hr>
+
+
+        <section class="footer" id="footer">
+            <div class="footer-row">
+              <div class="footer-col">
+                    <a href="index.html#home">
+                        <img src="pictures/beiteck_logo.png">
+                    </a>
+                    <ul class="links">
+                        <li><i class="fa fa-angle-right" aria-hidden="true"></i>
+                        <a href="privacy_policy.html"> Privacy Policy</a>
+                        </li>
+                        <li><i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <a href="terms_conditions.html"> Terms & Conditions</a>
+                            </li>
+                    </ul>
+              </div>
+              <div class="footer-col">
+                <h4><i class="fa fa-address-book" aria-hidden="true"></i> Contact Us</h4>
+                <ul class="links">
+                    <li><i class="fa fa-phone" aria-hidden="true"></i>
+                        <a href="tel:+96176134251">+961 76 134 251</a>
+                    </li>
+                    <li><i class="fa fa-envelope" aria-hidden="true"></i>
+                        <a href="mailto:samertarhini14@gmail.com">samertarhini14@gmail.com</a>
+                    </li>
+                    <h4 style="padding-top: 30px;"><i class="fa fa-globe" aria-hidden="true"></i> Social</h4>
+                    <div class="icons">
+                        <a href="https://www.facebook.com/">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="https://www.twitter.com/">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                        <a href="https://www.google.com/">
+                            <i class="fa fa-google"></i>
+                        </a>
+                    </div>
+                    <!-- <li><a href="#">Compressions</a></li>
+                    <li><a href="#">Customers</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Collection</a></li> -->
+                </ul>
+              </div>
+              <div class="footer-col">
+                <h4><i class="fa fa-address-card" aria-hidden="true"></i> Office Address</h4>
+                <ul class="links">
+                    <li><i class="fa fa-map" aria-hidden="true"></i> Lebanon, Nabatieh.. </li>
+                    <li><i class="fa fa-link" aria-hidden="true"></i>
+                        <a href="https://www.maps.google.com/"> Location</a></li>
+                    <li><i class="fa fa-map-marker" aria-hidden="true"></i> Bla Bla Street</li>
+                    <!-- <li><a href="#">Popular Designs</a></li>
+                    <li><a href="#">Art Skills</a></li>
+                    <li><a href="#">New Uploads</a></li> class="fa fa-link" imam sader street -->
+                </ul>
+              </div>
+              <!-- <div class="footer-col">
+                <h4><i class="fa fa-clock-o" aria-hidden="true"></i> Open Days | Hours</h4>
+                <ul class="links">
+                    <li><i class="fa fa-check" aria-hidden="true"></i> Monday | 8 AM - 10 PM</li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> Tuesday | 8 AM - 10 PM</li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> Wednesday | 8 AM - 10 PM</li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> Thursday | 8 AM - 10 PM</li>
+                    <li><i class="fa fa-times" aria-hidden="true"></i> Friday | Closed</li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> Saturday | 8 AM - 10 PM</li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> Sunday | 8 AM - 10 PM</li>
+                </ul>
+              </div> -->
+              <div class="footer-col">
+                <h4><i class="fa fa-list-ul" aria-hidden="true"></i> About Us</h4>
+                <p>
+                  <!-- Subscribe to our newsletter for a weekly dose
+                  of news, updates, helpful tips, and
+                  exclusive offers. -->
+                    We're here to help you and give the best as possible to provide you with the 
+                    suitable apartment to buy, rent, view, or even sell.. 
+                </p>
+                <form action="#home">
+                  <input type="text" placeholder="Any Comments.." title="Any Comments? Just tell us to help doing better (Optional)" required>
+                  <button type="submit">Submit</button>
+                </form>
+              </div>
+            </div>
+        </section>
+    
+        <h3 id="thanks">Thanks For Being Here! <br>We Appreciate Your Visit.. </h3>
+        <h3 id="copyright">Designed & Developed By "Samer Trh" <br><i class="fa fa-copyright" aria-hidden="true"></i> 2024 | All Rights Reserved</h3>
+    
+</body>
+</html>

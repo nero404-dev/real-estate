@@ -1,0 +1,87 @@
+.sell_header {
+    width: 80%;
+    margin: 30px auto;
+}
+
+.sell_header h1 {
+    text-align: center;
+    margin: 10px 0;
+    color: var(--c1);
+}
+
+.sell_header p {
+    color: var(--c8);
+}
+
+.sell_content {
+    width: 25%;
+    margin: 30px auto;
+    background-color: var(--c14);
+    border: 1px solid var(--c2);
+    border-radius: 5px;
+    padding: 5px 15px 15px 15px;
+}
+
+.sell_content:hover {
+    border: 1px solid var(--c1);
+    box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.6);
+}
+
+.sell_content h3 {
+    margin: 20px 0;
+    color: var(--c1);
+    border-left: 3px solid var(--c2);
+    padding-left: 5px;
+}
+
+.sell_content p {
+    margin: 5px 0;
+    color: var(--c13);
+}
+
+.sell_content p .fa {
+    padding-right: 5px;
+    color: var(--c1);
+}
+
+.sell_content p a {
+    text-decoration: none;
+    float: right;
+    color: var(--c7);
+}
+
+.sell_content p a:hover {
+    color: var(--c2);
+    text-decoration: underline;
+}
+
+.sell_btns h3 {
+    margin: 30px 0;
+}
+
+.sell_btns a {
+    text-decoration: none;
+}
+
+.sell_btns a button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: 1px solid var(--c1);
+    border-radius: 5px;
+    background-color: transparent;
+    color: var(--c1);
+    cursor: pointer;
+}
+
+.sell_btns a button:hover {
+    background-color: var(--c2);
+}
+
+@media screen and (max-width: 414px) {
+    .sell_content {
+        width: 80%;
+    }
+    .sell_btns a button {
+        padding: 10px 15px;
+    }
+}

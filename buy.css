@@ -1,0 +1,429 @@
+.header {
+    width: 80%;
+    margin: 30px auto;
+}
+
+.header h1 {
+    text-align: center;
+    color: var(--c1);
+}
+
+.header p {
+    margin: 20px 0;
+    color: var(--c8);
+}
+
+.filter {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+}
+
+.filter .search {
+    width: fit-content;
+    padding: 10px 20px;
+    border: 1px solid var(--c2);
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.filter .search input {
+    padding: 10px;
+    font-size: var(--s1);
+    border: none;
+    color: var(--c1);
+    caret-color: var(--c2);
+}
+
+.filter .search input:focus {
+    outline: none;
+}
+
+.filter .search .fa {
+    font-size: var(--s2);
+    color: var(--c1);
+}
+
+.filter .search input[type="search"]::-webkit-search-cancel-button {
+    cursor: pointer;
+    padding: 2px;
+}
+
+.filter select {
+    margin: 0 5px;
+    color: var(--c7);
+    border: 1px solid var(--c2);
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 22px 0px;
+}
+
+.filter select:focus {
+    outline: none;
+}
+
+.filter .find_btn a {
+    text-decoration: none;
+}
+
+.filter .find_btn a button {
+    padding: 22px 28px;
+    cursor: pointer;
+    background-color: var(--c2);
+    border: 1px solid var(--c2);
+    border-radius: 5px;
+    color: var(--c7);
+    margin: 0 5px;
+    font-weight: 600;
+}
+
+.filter .find_btn a button:hover {
+    background-color: transparent;
+}
+
+.sub_header {
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+}
+
+.sub_header .save_search a {
+    text-decoration: none;
+}
+
+.sub_header .save_search a button {
+    padding: 8px 20px;
+    border: 1px solid var(--c2);
+    border-radius: 5px;
+    background-color: transparent;
+    color: var(--c7);
+    cursor: pointer;
+}
+
+.sub_header .save_search a button:hover {
+    background-color: var(--c2);
+}
+
+.sub_header .save_search .fa {
+    padding-right: 5px;
+}
+
+.sub_header .sort {
+    display: flex;
+    float: right;
+    right: 10%;
+    position: absolute;
+}
+
+.sub_header .sort p {
+    padding: 8px 20px;
+    color: var(--c7);
+}
+
+.sub_header .sort select {
+    padding: 8px 20px;
+    border: 1px solid var(--c2);
+    border-radius: 5px;
+    color: var(--c7);
+    cursor: pointer;
+}
+
+.sub_header .sort select:focus {
+    outline: none;
+}
+
+.showing {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.showing p {
+    color: var(--c13);
+}
+
+.showing p span {
+    color: var(--c7);
+}
+
+.cats {
+    width: 80%;
+    margin: 0 auto;
+    /* border: 1px solid var(--c2); */
+    border-radius: 5px;
+    background-color: var(--c14);
+    padding: 10px;
+    column-count: 4;
+    column-gap: 20px;
+}
+
+.cats a {
+    text-decoration: none;
+}
+
+/* a[data-title]::after {
+    content: attr(data-title);
+    Add your desired styles here
+    background-color: var(--c2);
+    color: var(--c7);
+    border: 1px solid var(--c9);
+    border-radius: 5px;
+} */
+
+#in_between {
+    width: 80%;
+    margin: 30px auto;
+}
+
+#final_hr {
+    margin: 30px 0;
+}
+
+.cats .cat {
+    width: 100%;
+    /* margin: 30px auto; */
+    border: 1px solid var(--c2);
+    border-radius: 5px;
+    background-color: var(--c4);
+}
+
+.cats .cat:hover {
+    border: 1px solid var(--c1);
+    box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.6);
+}
+
+.cats .cat .campaign_logo {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%;
+    background-color: var(--c2);
+}
+
+.cats .cat .campaign_logo img {
+    width: 30%;
+    margin: 0 auto;
+    display: block;
+    padding: 10px 0;
+}
+
+.cats .cat #image {
+    width: 100%;
+    height: 100%;
+    /* border-top-left-radius: 5px;
+    border-top-right-radius: 5px; */
+    object-fit: cover;
+}
+
+/* .cats .cat #image:hover {
+    transform: scale(1.02);
+    transition-duration: 0.2s;
+    border-radius: 5px;
+    object-fit: fill;
+} */
+
+.cats .cat .cat_details {
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.cats .cat .cat_details h3 {
+    color: var(--c7);
+}
+
+.cats .cat .cat_details p {
+    margin: 5px 0;
+    color: var(--c8);
+}
+
+.cats .cat .cat_btns {
+    /* columns: 2; */
+    margin: 20px auto;
+    display: block;
+    width: 80%;
+    text-align: center;
+    justify-content: center;
+    column-count: 2;
+}
+
+.cats .cat .cat_btns button {
+    margin: 10px 5px;
+    padding: 8px 10px;
+    background-color: var(--c10);
+    border: 1px solid var(--c2);
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--c7);
+}
+
+.cats .cat .cat_btns button:hover {
+    background-color: var(--c2);
+}
+
+.cats .cat .cat_btns button .fa {
+    padding-right: 5px;
+}
+
+.last {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.last .pages {
+    width: 100%;
+    display: flex;
+    margin: 20px 0;
+}
+
+.last .pages .pages_btns {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+.last .pages a {
+    width: fit-content;
+    text-decoration: none;
+}
+
+.last .pages a button {
+    padding: 10px 15px;
+    background-color: var(--c14);
+    color: var(--c7);
+    border: 2px solid var(--c9);
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: var(--f1);
+    font-size: var(--s2);
+    margin: 0 5px;
+}
+
+.last .pages a button:hover {
+    border: 2px solid var(--c8);
+    background-color: var(--c10);
+}
+
+.last .pages .pages_btns p {
+    padding: 10px 15px;
+    color: var(--c7);
+}
+
+.last .pages a #next {
+    background-color: var(--c1);
+    color: var(--c2);
+    border: 2px solid var(--c1);
+}
+
+.last .pages a #next:hover {
+    text-decoration: underline var(--c2);
+}
+
+.last .pages #pages_active button {
+    background-color: var(--c1);
+    color: var(--c2);
+    border: 2px solid var(--c1);
+}
+
+.last .pages #pages_active button:hover {
+    text-decoration: underline var(--c2);
+}
+
+.last .results {
+    padding: 20px 0;
+}
+
+.last .results p {
+    color: var(--c13);
+}
+
+.last .results p span {
+    color: var(--c7);
+}
+
+@media screen and (max-width: 414px) {
+    .filter {
+        width: 90%;
+        margin: 20px auto;
+        display: block;
+    }
+    .filter .search {
+        margin: 0 auto;
+        display: block;
+    }
+    .filter select {
+        margin: 10px auto;
+        display: block;
+    }
+    .filter .select_option {
+        display: none;
+    }
+    .filter .find_btn a button {
+        margin: 10px auto;
+        display: block;
+        padding: 15px 40px;
+    }
+    .sub_header {
+        width: 90%;
+        margin: 30px auto;
+        display: block;
+    }
+    .sub_header .save_search {
+        margin: 0 auto;
+        display: block;
+        position: relative;
+        width: fit-content;
+    }
+    .sub_header .sort {
+        display: block;
+        float: none;
+        right: 0;
+        position: relative;
+        margin: 0 auto;
+        width: fit-content;
+    }
+    .cats {
+        column-count: 1;
+        padding: 0px;
+        width: 95%;
+    }
+    .cats .cat {
+        width: 90%;
+        margin: 20px auto;
+        border: 1px solid var(--c2);
+        border-radius: 5px;
+        background-color: var(--c4);
+    }
+    .cats .cat .cat_details {
+        margin: 10px auto;
+        text-align: center;
+        width: 90%;
+        font-size: var(--s1);
+    }
+    .cats .cat .cat_btns {
+        column-count: 1;
+    }
+    .cats .cat .cat_btns button {
+        margin: 10px auto;
+        display: block;
+        padding: 8px 20px;
+        font-size: var(--s8);
+    }
+    .last {
+        width: 90%;
+        margin: 20px auto;
+    }
+    .last .pages {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .last .pages .pages_btns {
+        display: flex;
+    }
+    .last .pages a button {
+        padding: 5px 10px;
+        font-size: var(--s1);
+    }
+}

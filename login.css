@@ -1,0 +1,83 @@
+body, html {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: var(--f1); */
+  }
+  
+  /* * {
+    box-sizing: border-box;
+  } */
+  
+  .bg-img {
+    /* The image used */
+    background-image: url("pictures/-ie7YZR_PopyvPn45jzavM4CHQA4BvXFx6dA_Goycxo.jpg");
+  
+    min-height: 450px;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: var(--c1);
+  }
+
+  .bg-img h1 {
+    margin: 20px 0;
+  }
+  
+  /* Add styles to the form container */
+  .container {
+    position: relative;
+    right: 0;
+    margin: 0 auto;
+    display: block;
+    max-width: 500px;
+    padding: 16px;
+    background-color: var(--c12);
+  }
+  
+  /* Full-width input fields */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    border-radius: 5px;
+    background: var(--c10);
+    color: var(--c1);
+    caret-color: var(--c2);
+    box-sizing: border-box;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    outline: none;
+  }
+  
+  /* Set a style for the submit button */
+  .btn {
+    background-color: var(--c2);
+    border: 1px solid var(--c2);
+    border-radius: 5px;
+    color: var(--c1);
+    padding: 16px 20px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .btn:hover {
+    background-color: transparent;
+    font-weight: 600;
+  }
+
+  @media screen and (max-width: 414px) {
+    .container {
+        position: relative;
+        right: 0;
+        margin: 0 auto;
+        display: block;
+        max-width: 300px;
+        padding: 16px;
+        background-color: var(--c12);
+      }
+  }

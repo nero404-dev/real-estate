@@ -1,0 +1,404 @@
+.agent_filters {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+}
+
+.agent_filters .agent_btns {
+    /* margin-left: 20px;
+    margin-right: 20px; */
+    width: 50%;
+    display: flex;
+    margin: 20px 0;
+}
+
+.agent_filters .agent_btns a {
+    text-decoration: none;
+}
+
+.agent_filters .agent_btns a button {
+    width: 100%;
+    cursor: pointer;
+    padding: 16px 40px;
+    border: 1px solid var(--c9);
+    border-radius: 10px;
+    font-size: var(--s1);
+}
+
+.agent_filters .agent_btns a #agents {
+    background-color: var(--c14);
+    color: var(--c1);
+}
+
+.agent_filters .agent_btns a #agents:hover {
+    background-color: var(--c10);
+}
+
+.agent_filters .agent_btns a #agencies {
+    background-color: var(--c1);
+    color: var(--c4);
+    cursor: default;
+    margin-left: 5px;
+}
+
+#filter_hr {
+    margin-right: 50px;
+}
+
+.agent_filters .search_district_bar {
+    /* margin-left: 20px;
+    margin-right: 20px; */
+    width: 100%;
+    display: flex;
+    border: 2px solid var(--c2);
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.agent_filters .search_district_bar .fa {
+    padding: 15px;
+    color: var(--c1);
+}
+
+.agent_filters .search_district_bar input {
+    width: 90%;
+    border: none;
+    color: var(--c13);
+    caret-color: var(--c2);
+    font-size: var(--s1);
+}
+
+.agent_filters .search_district_bar input:focus {
+    outline: none;
+}
+
+.agent_filters .search_district_bar input[type="search"]::-webkit-search-cancel-button {
+    cursor: pointer;
+    padding: 3px;
+}
+
+#shadow_hr {
+    background-color: var(--c9);
+    height: 3px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.all_agency {
+    width: 100%;
+    background-color: var(--c14);
+    margin: 30px 0;
+}
+
+.agency_cats {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.agency_cats h2 {
+    color: var(--c1);
+    border-left: 3px solid var(--c2);
+    padding-left: 5px;
+    margin-top: 10px;
+}
+
+.agency_cats h2 span {
+    border-bottom: 2px solid var(--c2);
+}
+
+#agency_header {
+    color: var(--c1);
+    border-left: 3px solid var(--c2);
+    padding-left: 5px;
+    width: 80%;
+    margin: 30px auto;
+}
+
+#agency_header span {
+    border-bottom: 2px solid var(--c2);
+}
+
+.agency_cats p {
+    color: var(--c13);
+}
+
+.agency_cats .not_header {
+    display: flex;
+    margin: 20px 0;
+}
+
+.agency_cats .not_header #sort {
+    position: absolute;
+    float: right;
+    right: 10%;
+}
+
+.agency_cats .not_header p span {
+    color: var(--c7);
+}
+
+.agency_cats a {
+    text-decoration: none;
+    color: var(--c4);
+}
+
+.agency_cat {
+    width: 100%;
+    margin: 20px auto;
+    border: 1px solid var(--c2);
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.3);
+}
+
+.agency_cat:hover {
+    box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.6);
+}
+
+.agency_cat .campaign_logo {
+    width: 100%;
+    height: 30px;
+    padding: 10px 0;
+    background-color: var(--c2);
+}
+
+.agency_cat .campaign_logo img {
+    height: 100%;
+    margin-left: 30px;
+}
+
+.agency_cat .row_1 {
+    display: flex;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.agency_cat .row_1 .fa {
+    color: var(--c2);
+}
+
+.agency_cat .row_1 .col_1 {
+    margin-left: 10px;
+}
+
+.agency_cat .row_1 .col_1 p {
+    color: var(--c13);
+    margin: 10px 0;
+}
+
+.agency_cat .row_1 .col_1 p #rate, .agency_cat .row_1 .col_1 p #reviews, .agency_cat .row_1 .col_1 p #reviews_last12months {
+    color: var(--c7);
+}
+
+.agency_cat .row_1 .column h4, .agency_cat .row_1 .column .rows_2_3_in_col .sub_cat #nb {
+    color: var(--c7);
+    margin: 10px 0;
+}
+
+.agency_cat .row_1 .column .rows_2_3_in_col {
+    display: flex;
+    text-align: center;
+    margin-left: 30px;
+}
+
+.agency_cat .row_1 .column .rows_2_3_in_col .sub_cat {
+    width: 30%;
+    margin: 10px 0;
+    margin-left: 20px;
+}
+
+.agency_cat .row_1 .column .rows_2_3_in_col .sub_cat .fa, .agency_cat .row_1 .column .rows_2_3_in_col .sub_cat #nb, .agency_cat .row_1 .column .rows_2_3_in_col .sub_cat p {
+    padding: 10px 0;
+}
+
+.agency_cat .row_1 .column h4 {
+    margin-left: 30px;
+}
+
+#hr_col {
+    height: 150px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.agency_cat .row_2 .row_2_btn {
+    width: 100%;
+}
+
+.agency_cat .row_2 .row_2_btn .fa {
+    color: var(--c2);
+    padding-right: 5px;
+}
+
+.agency_cat .row_2 .row_2_btn a {
+    text-decoration: none;
+}
+
+.agency_cat .row_2 .row_2_btn a button {
+    padding: 10px 60px;
+    border: 2px solid var(--c9);
+    background-color: var(--c14);
+    color: var(--c1);
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto;
+    font-family: var(--f1);
+    font-size: var(--s2);
+}
+
+.agency_cat .row_2 .row_2_btn a button:hover {
+    background-color: var(--c10);
+    border: 2px solid var(--c8);
+    .fa {
+        color: var(--c1);
+    }
+}
+
+/* .agency_cat .row_2 .row_2_btn a button .fa:hover {
+    color: var(--c1);
+} */
+
+.last {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.last .pages {
+    width: 100%;
+    display: flex;
+    margin: 20px 0;
+}
+
+.last .pages .pages_btns {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+.last .pages a {
+    width: fit-content;
+    text-decoration: none;
+}
+
+.last .pages a button {
+    padding: 10px 15px;
+    background-color: var(--c14);
+    color: var(--c7);
+    border: 2px solid var(--c9);
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: var(--f1);
+    font-size: var(--s2);
+    margin: 0 5px;
+}
+
+.last .pages a button:hover {
+    border: 2px solid var(--c8);
+    background-color: var(--c10);
+}
+
+.last .pages .pages_btns p {
+    padding: 10px 15px;
+    color: var(--c7);
+}
+
+.last .pages a #next {
+    background-color: var(--c1);
+    color: var(--c2);
+    border: 2px solid var(--c1);
+}
+
+.last .pages a #next:hover {
+    text-decoration: underline var(--c2);
+}
+
+.last .pages #pages_active button {
+    background-color: var(--c1);
+    color: var(--c2);
+    border: 2px solid var(--c1);
+}
+
+.last .pages #pages_active button:hover {
+    text-decoration: underline var(--c2);
+}
+
+.last .results {
+    padding: 20px 0;
+}
+
+.last .results p {
+    color: var(--c13);
+}
+
+.last .results p span {
+    color: var(--c7);
+}
+
+@media screen and (max-width: 414px) {
+    .agent_filters {
+        display: block;
+    }
+    .agent_filters .agent_btns {
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+    .agent_filters .agent_btns a #agencies {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    #filter_hr {
+        display: none;
+    }
+    .agent_filters .search_district_bar {
+        width: 100%;
+        display: flex;
+        margin-top: 10px;
+    }
+    .agency_cats {
+        width: 90%;
+    }
+    .agency_cats .not_header {
+        display: block;
+        margin: 20px 0;
+    }
+    .agency_cats .not_header #sort {
+        position: relative;
+        float: none;
+        right: 0;
+    }
+    .agency_cat .row_1 {
+        display: block;
+    }
+    .agency_cat .row_1 .column .rows_2_3_in_col {
+        display: flex;
+        text-align: center;
+        margin-left: 0px;
+    }
+    .agency_cat .row_1 .column .rows_2_3_in_col .sub_cat {
+        width: 40%;
+        margin: 20px auto 20px auto;
+    }
+    #hr_col {
+        display: none;
+    }
+    .last {
+        width: 90%;
+        margin: 20px auto;
+    }
+    .last .pages {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .last .pages .pages_btns {
+        display: flex;
+    }
+    .last .pages a button {
+        padding: 5px 10px;
+        font-size: var(--s1);
+    }
+}

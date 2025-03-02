@@ -1,0 +1,517 @@
+.agency_name_title {
+    width: 100%;
+    background-color: var(--c2);
+}
+
+.agency_name_title img {
+    height: 40px;
+    padding: 10px 0;
+    background-color: var(--c2);
+    display: block;
+    margin: 0 auto;
+}
+
+.header {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.personal_info {
+    width: 50%;
+    margin: 0 auto;
+    border: 2px solid var(--c2);
+    border-top: none;
+    display: flex;
+}
+
+.personal_info img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    padding: 10px 30px;
+    /* float: left; */
+}
+
+.personal_info_text {
+    width: 100%;
+}
+
+.name {
+    display: flex;
+}
+
+.name h2 {
+    color: var(--c1);
+    font-size: var(--s3);
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.share_btn {
+    margin: 30px 20px 0 20px;
+}
+
+/* .share_btn a {
+    text-decoration: none;
+    color: var(--c7);
+} */
+
+.share_btn a button {
+    color: var(--c7);
+    background-color: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.share_btn a button:hover {
+    background-color: var(--c10);
+    border: 1px solid var(--c9);
+}
+
+.header .personal_info .personal_info_text p {
+    color: var(--c13);
+    margin: 5px 0;
+}
+
+.header .personal_info .personal_info_text p span {
+    color: var(--c7);
+}
+
+.header .personal_info .personal_info_text #star {
+    color: var(--c2);
+}
+
+#shadow_hr {
+    margin-top: 30px;
+}
+
+.agent_info {
+    width: 80%;
+    margin: 30px auto;
+}
+
+.agent_info .col_2 {
+    width: 30%;
+    background-color: var(--c14);
+    border: 1px solid var(--c2);
+    box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    float: right;
+    position: sticky;
+    top: 20px;
+    padding: 10px 0;
+}
+
+.agent_info .col_2:hover {
+    border: 1px solid var(--c1);
+    box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.6);
+}
+
+.agent_info .col_1 {
+    width: 65%;
+}
+
+.agent_info .col_1 .cat {
+    padding: 30px 20px;
+    background-color: var(--c14);
+    border-radius: 10px;
+    margin: 20px 0;
+    border: 1px solid var(--c2);
+    /* box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.3); */
+}
+
+.agent_info .col_1 .cat:hover {
+    border: 1px solid var(--c1);
+    box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.6);
+}
+
+.agent_info .col_1 .cat h3 {
+    color: var(--c1);
+    border-left: 3px solid var(--c2);
+    padding-left: 5px;
+}
+
+.agent_info .col_1 .cat p {
+    color: var(--c13);
+}
+
+.agent_info .col_1 .cat #last_12months {
+    margin: 10px 0 20px 0;
+    font-size: var(--s1);
+}
+
+.agent_info .col_1 .cat .bar {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    column-gap: 10%;
+    padding: 30px 0 20px 0;
+    background-color: var(--c4);
+    border-radius: 5px;
+}
+
+.agent_info .col_1 .cat .bar p {
+    padding-left: 25px;
+    font-size: var(--s2);
+    margin-top: -5px;
+}
+
+.agent_info .col_1 .cat .bar p span {
+    color: var(--c7);
+}
+
+.personal_info_2 {
+    width: 100%;
+    display: block;
+}
+
+.personal_info_2 img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 15px 0 15px 0;
+    display: block;
+    margin: 0 auto;
+}
+
+.personal_info_text_2 {
+    width: 100%;
+}
+
+.name_2 {
+    display: flex;
+    margin: 0 auto;
+}
+
+.name_2 h2 {
+    color: var(--c1);
+    font-size: var(--s3);
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: 50px;
+}
+
+.share_btn_2 {
+    margin: 15px 20px 0 20px;
+}
+
+.share_btn_2 a button {
+    color: var(--c7);
+    background-color: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.share_btn_2 a button:hover {
+    background-color: var(--c10);
+    border: 1px solid var(--c9);
+}
+
+.contact_btns {
+    display: block;
+}
+
+.contact_btns a {
+    text-decoration: none;
+    cursor: default;
+}
+
+.contact_btns a button {
+    display: block;
+    margin: 5px auto;
+    width: 90%;
+    height: 40px;
+    border: 2px solid var(--c9);
+    background-color: var(--c14);
+    color: var(--c1);
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: var(--f1);
+    font-size: var(--s2);
+}
+
+.contact_btns a button .fa {
+    padding-right: 5px;
+    color: var(--c2);
+}
+
+.contact_btns a button:hover {
+    background-color: var(--c10);
+    border: 2px solid var(--c2);
+    .fa {
+        color: var(--c1);
+    }
+}
+
+/* .agent_info .cat .sub_cat {
+    padding-bottom: 10px;
+} */
+
+.agent_info .cat .sub_cat .sub_cat_bar {
+    /* background-color: blue; */
+    border: 1px solid var(--c9);
+    border-radius: 5px;
+    height: 200px;
+    margin: 15px 0;
+}
+
+.agent_info .cat .sub_cat .sub_cat_bar:hover {
+    border: 1px solid var(--c2);
+    box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.3);
+    transform: scale(1.01);
+}
+
+.agent_info .cat .sub_cat .sub_cat_bar img {
+    float: left;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.agent_info .cat .sub_cat .sub_cat_bar .sold_detail {
+    width: 50%;
+    float: right;
+    margin: 25px 0;
+}
+
+.agent_info .cat .sub_cat a {
+    text-decoration: none;
+}
+
+.agent_info .cat .sub_cat .sub_cat_bar p {
+    font-size: var(--s2);
+    margin: 10px auto;
+    /* border: 1px solid blue; */
+}
+
+.agent_info .cat .sub_cat .sub_cat_bar p span {
+    color: var(--c7);
+}
+
+.agent_info .cat .sub_cat .sub_cat_bar p .fa {
+    color: var(--c7);
+    padding-left: 5px;
+}
+
+.agent_info .cat .sold_btn a {
+    text-decoration: none;
+    cursor: default;
+}
+
+.agent_info .cat .sold_btn a button {
+    margin: 10px auto;
+    display: block;
+    padding: 10px 40px;
+    cursor: pointer;
+    font-size: var(--s1);
+    background-color: transparent;
+    color: var(--c13);
+    border: 1px solid var(--c9);
+    box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.3);
+}
+
+.agent_info .cat .sold_btn a button:hover {
+    color: var(--c7);
+    border: 1px solid var(--c9);
+    box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.6);
+}
+
+.agent_info .cat .sold_btn a button .fa {
+    padding-left: 10px;
+}
+
+.agent_info .cat .about_agent p {
+    margin: 10px 0;
+    height: 150px;
+    overflow: auto;
+    scroll-behavior: smooth;
+    padding-right: 10px;
+}
+
+.agent_info .cat .about_agent p:hover {
+    color: var(--c7);
+}
+
+.agent_info .cat #read {
+    margin: 10px 0;
+}
+
+.agent_info .cat p a {
+    color: var(--c1);
+}
+
+.agent_info .cat p a:hover {
+    color: var(--c2);
+}
+
+.agent_info .cat .sub_cat_2 {
+    margin: 15px 0;
+    background-color: var(--c4);
+    border-radius: 5px;
+}
+
+.agent_info .cat .sub_cat_2 .sub_cat_bar_2 {
+    border: 1px solid var(--c9);
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.agent_info .cat .sub_cat_2 .sub_cat_bar_2:hover {
+    border: 1px solid var(--c2);
+}
+
+.agent_info .cat .agent_rating_header {
+    display: flex;
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px 0;
+    font-size: var(--s1);
+}
+
+.agent_info .cat .agent_rating_header .fa {
+    color: var(--c2);
+}
+
+.agent_info .cat .agent_rating_header p {
+    padding-left: 10px;
+}
+
+.agent_info .cat .agent_rating_header #stars {
+    margin-left: 5px;
+}
+
+.agent_info .cat .agent_rating_header #verified {
+    position: absolute;
+    float: right;
+    right: 42%;
+}
+
+.agent_info .cat .agent_rating_header #verified .fa {
+    padding-right: 10px;
+}
+
+.agent_info .cat .sub_cat_2 .sub_cat_bar_2 p {
+    margin: 10px 0;
+    color: var(--c11);
+}
+
+.agent_info .cat .sub_cat_2 .sub_cat_bar_2 #text {
+    height: 40px;
+    overflow: auto;
+}
+
+.agent_info .cat .sub_cat_2 .sub_cat_bar_2 p span {
+    color: var(--c7);
+}
+
+.agent_info .cat .sub_cat_2 .sub_cat_bar_2 #day_ago {
+    color: var(--c13);
+    font-size: var(--s8);
+}
+
+@media screen and (max-width: 414px) {
+    .header {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .header .personal_info {
+        width: 100%;
+        margin: 0;
+        display: block;
+    }
+    .header .personal_info img {
+        width: 100px;
+        height: 100px;
+        padding: 10px 0;
+        margin: 0 auto;
+        display: block;
+    }
+    .header .personal_info .personal_info_text {
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+        padding: 10px 0 20px 0;
+        text-align: center;
+    }
+    .header .personal_info .personal_info_text .name h2 {
+        margin-top: 25px;
+        margin-bottom: 15px;
+        /* margin: 0 auto; */
+        display: block;
+        width: 100%;
+        border: 1px solid var(--c2);
+        border-left: none;
+    }
+    .agent_info {
+        width: 90%;
+        margin: 30px auto;
+    }
+    .agent_info .col_2 {
+        width: 100%;
+        border-radius: 10px;
+        float: none;
+        position: relative;
+        top: 0;
+        padding: 10px 0;
+    }
+    .agent_info .col_1 {
+        width: 100%;
+    }
+    .agent_info .col_1 .cat .bar {
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        column-gap: 0;
+        padding: 30px 0 20px 0;
+        border-radius: 5px;
+    }
+    .agent_info .col_1 .cat .bar p {
+        padding-left: 0px;
+        font-size: var(--s1);
+        margin-top: -5px;
+    }
+    .agent_info .cat .sub_cat .sub_cat_bar {
+        border-radius: 5px;
+        height: 400px;
+        margin: 15px 0;
+    }
+    .agent_info .cat .sub_cat .sub_cat_bar img {
+        float: none;
+        height: 50%;
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    .agent_info .cat .sub_cat .sub_cat_bar .sold_detail {
+        width: 80%;
+        margin: 25px auto;
+        display: block;
+        float: none;
+    }
+    .agent_info .cat .agent_rating_header {
+        display: block;
+        width: 100%;
+        margin: 5px 0;
+        padding: 10px 0;
+    }
+    .agent_info .cat .agent_rating_header #verified {
+        position: relative;
+        float: right;
+        right: 0;
+        margin-top: 5px;
+    }
+    .agent_info .cat .sub_cat_2 .sub_cat_bar_2 #text {
+        height: 65px;
+        overflow: auto;
+    }
+}

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agency Profile | Real Estate</title>
+    <link rel="stylesheet" href="agency_profile.css">
+    <link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="nav_and_footer.css">
+    <script src="responsive_nav.js"></script>
+    <script src="copy_to_clipboard.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="pictures/beiteck_logo_icon.jpg">
+</head>
+<body>
+    <div class="intro">
+        <nav>
+            <a href="index.html"><img id="logo" src="pictures/beiteck_logo.png"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="buy.html">Buy</a></li>
+                <li><a href="rent.html">Rent</a></li>
+                <li><a href="about.html">About</a></li>
+                <div class="dropdown">
+                    <li>Agents <br><i class="fa fa-sort-desc" aria-hidden="true"></i></li>
+                    <div class="dropdown-content">
+                        <li><a href="agent.html">Find An Agent</a></li>
+                        <li><a href="agents_from_district.html">Agents From District</a></li>
+                    </div>
+                </div>
+                <li><a id="active" href="agencies.html">Agencies</a></li>
+                <li><a href="sell.html">Sell | Post A Listing</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="#footer">Contact</a></li><hr id="nav_hr">
+                <li><a id="after_hr" href="login.html">Login</a></li><hr id="nav_hr">
+                <li><a id="after_hr" href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Simulate a smartphone / tablet -->
+    <div class="mobile-container">
+
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+            <a href="index.html"><img id="logo_resp" src="pictures/beiteck_logo.png"></a>
+            <div id="myLinks">
+                <a href="index.html">Home</a>
+                <a href="buy.html">Buy</a>
+                <a href="rent.html">Rent</a>
+                <a href="about.html">About</a>
+                <a href="agent.html">Find An Agent</a>
+                <a href="agents_from_district.html">Agents From District</a>
+                <a id="active" href="agencies.html">Agencies</a>
+                <a href="sell.html">Sell | Post A Listing</a>
+                <a href="services.html">Services</a>
+                <a href="#footer">Contact</a><hr id="nav_hr">
+                <a href="login.html">Login</a><hr id="nav_hr">
+                <a href="signup.html">Sign Up</a>
+            </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        </div>
+        
+        <!-- End smartphone / tablet look -->
+        </div>
+
+        <div class="agency_name_title">
+            <img src="pictures/morton.png">
+        </div>
+
+        <div class="bg_img">
+            <!-- <img src="pictures/morton_bg.jpeg"> -->
+        </div>
+
+        <div class="bg_img_resp">
+            <img src="pictures/morton_bg.jpeg">
+        </div>
+
+        <div id="shadow_hr"></div>
+
+        <div class="header">
+            <div class="personal_info">
+                <!-- <img src="pictures/profile_pic.png"> -->
+                <div class="personal_info_text">
+                    <div class="name">
+                        <h2>morton - Beirut</h2>
+                        <div class="share_btn">
+                            <a href="#" onclick="copyToClipboard(window.location.href); return false;"><button><i class="fa fa-share" aria-hidden="true"></i></button></a>
+                        </div>
+                    </div>
+                    <div class="personal_info_details">
+                        <p>floor 5 / Hamra Street, Beirut</p>
+                        <p><i id="star" class="fa fa-star" aria-hidden="true"></i> <span>5.0</span> <u>( 310 reviews )</u></p>
+                        <div class="work_people">
+                            <div class="imgs">
+                                <img id="img1" src="pictures/profile_pic_morton_3.png">
+                                <img id="img2" src="pictures/profile_pic_morton_2.png">
+                                <img id="img3" src="pictures/profile_pic.png">
+                            </div>
+                            <p>13 people work here</p>
+                        </div>
+                        <div class="specifications">
+                            <p>Professional (219)</p>
+                            <p>Great communicator (159)</p>
+                            <p>Reliable (154)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="agent_info">
+            <div class="col_2">
+                <div class="personal_info_2">
+                    <div class="agency_name_title">
+                        <img src="pictures/morton.png">
+                    </div>
+                    <div class="title_links">
+                        <h3>morton - Beirut</h3>
+                        <div class="links">
+                            <a href="https://www.facebook.com/">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="#" onclick="copyToClipboard(window.location.href); return false;"><i class="fa fa-share" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact_btns">
+                        <a href="mailto:samertarhini14@gmail.com"><button><i class="fa fa-envelope" aria-hidden="true"></i> Enquire</button></a>
+                        <a href="tel:+96176134251"><button><i class="fa fa-phone" aria-hidden="true"></i> Call Agency</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col_1">
+                <div class="cat">
+                    <h3>Market performance snapshot</h3>
+                    <p id="last_12months">In the last 12 months Morton - Beirut has sold <span>40</span> properties and leased <span>107</span> properties on *realestate.com^</p>
+                    <h4>Sales Performance</h4>
+                    <div class="bar">
+                        <p><span>$ 1.27 M</span> <br>Median Sold Price</p>
+                        <p><span>31</span> <br>Median Days Advertised</p>
+                        <p><span>40</span> <br>Properties Sold</p>
+                        <p><span>7</span> <br>Properties For Sale</p>
+                    </div>
+                    <h4>Rent Performance</h4>
+                    <div class="bar">
+                        <p><span>$ 950 pw</span> <br>Median Leased Price</p>
+                        <p><span>31</span> <br>Median Days Advertised</p>
+                        <p><span>107</span> <br>Properties Leased</p>
+                        <p><span>9</span> <br>Properties For Rent</p>
+                    </div>
+                </div>
+                <div class="cat">
+                    <h3>Our Properties</h3>
+                    <p id="last_12months">Morton - Beirut have sold <span>902</span> properties of all time on realestate.com^, have <span>7</span> properties for sale and have <span>9</span> properties for rent.^</p>
+                    <p id="last_12months">Showing <span>3</span> of <span>40</span> properties sold on realestate.com^ in the last 12 months</p>
+                    <div class="sub_cat">
+                        <a href="buy_detail.html"><div class="sub_cat_bar">
+                            <img src="pictures/sold_1.jpeg">
+                            <div class="sold_detail">
+                                <p><span>$ 1,000,000</span></p>
+                                <p>2nd Floor / Achrafieh, Beirut</p>
+                                <p><i class="fa fa-bed" aria-hidden="true"></i> 1 <i class="fa fa-bath" aria-hidden="true"></i> 1 <i class="fa fa-car" aria-hidden="true"></i> 1 | Apartment</p>
+                                <p>Sold: 01 Jul 2024 | by Ethan Fowler</p>
+                            </div>
+                        </div></a>
+                        <a href="buy_detail.html"><div class="sub_cat_bar">
+                            <img src="pictures/sold_2.jpeg">
+                            <div class="sold_detail">
+                                <p><span>$ 718,000</span></p>
+                                <p>GF / Gemmayze, Beirut</p>
+                                <p><i class="fa fa-bed" aria-hidden="true"></i> 1 <i class="fa fa-bath" aria-hidden="true"></i> 1 <i class="fa fa-car" aria-hidden="true"></i> 0 | Apartment</p>
+                                <p>Sold: 20 Jun 2024 | by Ethan Fowler</p>
+                            </div>
+                        </div></a>
+                        <a href="buy_detail.html"><div class="sub_cat_bar">
+                            <img src="pictures/sold_3.jpeg">
+                            <div class="sold_detail">
+                                <p><span>$ 1,100,000</span></p>
+                                <p>5th Floor / Chiyah, Beirut</p>
+                                <p><i class="fa fa-bed" aria-hidden="true"></i> 2 <i class="fa fa-bath" aria-hidden="true"></i> 2 <i class="fa fa-car" aria-hidden="true"></i> 1 | Apartment</p>
+                                <p>Sold: 21 Jun 2024 | by Ethan Fowler</p>
+                            </div>
+                        </div></a>
+                    </div>
+                    <div class="sold_btn">
+                        <a href="buy.html"><button>Show More Listings <i class="fa fa-angle-double-right" aria-hidden="true"></i></button></a>
+                    </div>
+                </div>
+                <div class="cat">
+                    <h3>About The Team</h3>
+                    <p>Showing <span>3</span> of <span>13</span> team members from Morton - Beirut and their key performance over the last 12 months. ^</p>
+                    <div class="sub_cat_agents">
+                        <div class="sub_cat_agents_box">
+                            <img src="pictures/profile_pic.png">
+                            <h4>Ethan Fowler</h4>
+                            <p>Sales Executive</p>
+                            <div class="sub_cat_agents_details">
+                                <p><span>42</span> <br>Properties Sold <br>(as lead agent)</p>
+                                <p><span>$ 1.27 M</span> <br>Median Sale Price</p>
+                            </div>
+                        </div>
+                        <div class="sub_cat_agents_box">
+                            <img src="pictures/profile_pic_morton_2.png">
+                            <h4>Arman Zounuzy</h4>
+                            <p>Sales Associate</p>
+                            <div class="sub_cat_agents_details">
+                                <p><span>35</span> <br>Properties Sold <br>(as lead agent)</p>
+                                <p><span>$ 1.40 M</span> <br>Median Sale Price</p>
+                            </div>
+                        </div>
+                        <div class="sub_cat_agents_box">
+                            <img src="pictures/profile_pic_morton_3.png">
+                            <h4>Artan Kains</h4>
+                            <p>Sales Assistant to Ethan Fowler</p>
+                            <div class="sub_cat_agents_details">
+                                <p><span>6</span> <br>Properties Sold <br>(as lead agent)</p>
+                                <p><span>$ 779 k</span> <br>Median Sale Price</p>
+                            </div>
+                        </div>
+                        <div class="sub_cat_agents_box">
+                            <img src="pictures/profile_pic_2.jpeg">
+                            <h4>Megan Tessa</h4>
+                            <p>Director</p>
+                            <div class="sub_cat_agents_details">
+                                <p><span>14</span> <br>Properties Sold <br>(as lead agent)</p>
+                                <p><span>$ 1.03 M</span> <br>Median Sale Price</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="more_btn">
+                        <a href="agent.html"><button>Show More <i class="fa fa-angle-double-right" aria-hidden="true"></i></button></a>
+                    </div>
+                </div>
+                <div class="cat">
+                    <div class="about_agency">
+                        <h3>About The Agency</h3>
+                        <p>Morton Beirut specialise in sale and leasing 
+                            of premium residential properties in Beirut's East 
+                            and City areas. Having focused on this market for 
+                            many years the Circular Quay office has been 
+                            responsible for setting many record prices and 
+                            bench-mark sales for our clients. </p>
+                        <p>The team approach to sales and leasing is dynamic, 
+                            implementing strategies that provide maximum 
+                            exposure for your property and ensuring that it 
+                            is at the forefront of the potential buyer's or 
+                            tenant's mind. We constantly pursue new 
+                            opportunities to reach the market and to achieve 
+                            a premium result.</p>
+                        <ul><li>
+                        <a href="https://www.morton.com.au">
+                            <p>Agency Website <i class="fa fa-share" aria-hidden="true"></i></p>
+                        </a></li>
+                        <li><a href="https://www.facebook.com/">
+                            <i class="fa fa-facebook"></i>
+                        </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="footer" id="footer">
+            <div class="footer-row">
+              <div class="footer-col">
+                    <a href="index.html#home">
+                        <img src="pictures/beiteck_logo.png">
+                    </a>
+                    <ul class="links">
+                        <li><i class="fa fa-angle-right" aria-hidden="true"></i>
+                        <a href="privacy_policy.html"> Privacy Policy</a>
+                        </li>
+                        <li><i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <a href="terms_conditions.html"> Terms & Conditions</a>
+                            </li>
+                    </ul>
+              </div>
+              <div class="footer-col">
+                <h4><i class="fa fa-address-book" aria-hidden="true"></i> Contact Us</h4>
+                <ul class="links">
+                    <li><i class="fa fa-phone" aria-hidden="true"></i>
+                        <a href="tel:+96176134251">+961 76 134 251</a>
+                    </li>
+                    <li><i class="fa fa-envelope" aria-hidden="true"></i>
+                        <a href="mailto:samertarhini14@gmail.com">samertarhini14@gmail.com</a>
+                    </li>
+                    <h4 style="padding-top: 30px;"><i class="fa fa-globe" aria-hidden="true"></i> Social</h4>
+                    <div class="icons">
+                        <a href="https://www.facebook.com/">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="https://www.twitter.com/">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                        <a href="https://www.google.com/">
+                            <i class="fa fa-google"></i>
+                        </a>
+                    </div>
+                    <!-- <li><a href="#">Compressions</a></li>
+                    <li><a href="#">Customers</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Collection</a></li> -->
+                </ul>
+              </div>
+              <div class="footer-col">
+                <h4><i class="fa fa-address-card" aria-hidden="true"></i> Office Address</h4>
+                <ul class="links">
+                    <li><i class="fa fa-map" aria-hidden="true"></i> Lebanon, Nabatieh.. </li>
+                    <li><i class="fa fa-link" aria-hidden="true"></i>
+                        <a href="https://www.maps.google.com/"> Location</a></li>
+                    <li><i class="fa fa-map-marker" aria-hidden="true"></i> Bla Bla Street</li>
+                    <!-- <li><a href="#">Popular Designs</a></li>
+                    <li><a href="#">Art Skills</a></li>
+                    <li><a href="#">New Uploads</a></li> class="fa fa-link" imam sader street -->
+                </ul>
+              </div>
+              <!-- <div class="footer-col">
+                <h4><i class="fa fa-clock-o" aria-hidden="true"></i> Open Days | Hours</h4>
+                <ul class="links">
+                    <li><i class="fa fa-check" aria-hidden="true"></i> Monday | 8 AM - 10 PM</li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> Tuesday | 8 AM - 10 PM</li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> Wednesday | 8 AM - 10 PM</li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> Thursday | 8 AM - 10 PM</li>
+                    <li><i class="fa fa-times" aria-hidden="true"></i> Friday | Closed</li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> Saturday | 8 AM - 10 PM</li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> Sunday | 8 AM - 10 PM</li>
+                </ul>
+              </div> -->
+              <div class="footer-col">
+                <h4><i class="fa fa-list-ul" aria-hidden="true"></i> About Us</h4>
+                <p>
+                  <!-- Subscribe to our newsletter for a weekly dose
+                  of news, updates, helpful tips, and
+                  exclusive offers. -->
+                    We're here to help you and give the best as possible to provide you with the 
+                    suitable apartment to buy, rent, view, or even sell.. 
+                </p>
+                <form action="#home">
+                  <input type="text" placeholder="Any Comments.." title="Any Comments? Just tell us to help doing better (Optional)" required>
+                  <button type="submit">Submit</button>
+                </form>
+              </div>
+            </div>
+        </section>
+    
+        <h3 id="thanks">Thanks For Being Here! <br>We Appreciate Your Visit.. </h3>
+        <h3 id="copyright">Designed & Developed By "Samer Trh" <br><i class="fa fa-copyright" aria-hidden="true"></i> 2024 | All Rights Reserved</h3>
+    
+</body>
+</html>

@@ -1,0 +1,45 @@
+:root {
+    --c1: #000080;
+    --c2: #e5b80b;
+    --c3: #cecece;
+    --c4: #ffffff;
+    --c5: #000000;
+    --c6: #00007a;
+    --c7: #424242;
+    --c8: #696969;
+    --c9: #a4a4a4;
+    --c10: #dbdbdb;
+    --c11: #666666;
+    --c12: #f6f6f6;
+    --c13: #848484;
+    --c14: #efefef;
+    
+    --s1: 15px;
+    --s2: 18px;
+    --s3: 30px;
+    --s4: 22px;
+    --s5: 25px;
+    --s6: 40px;
+    --s7: 50px;
+    --s8: 13px;
+    --s9: 35px;
+
+    #header {
+        /* width: 80%;
+        margin: 0 auto; */
+        font-family: var(--f1);
+        color: var(--c1);
+        padding: 5px;
+        border-left: 3px solid var(--c2);
+    }
+
+    #shadow_hr {
+        background-color: var(--c9);
+        height: 3px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    }
+
+    --f1: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    --f2: Arial, Helvetica, sans-serif;
+
+}

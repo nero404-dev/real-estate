@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy | Real Estate</title>
+    <link rel="stylesheet" href="buy.css">
+    <link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="nav_and_footer.css">
+    <script src="responsive_nav.js"></script>
+    <script src="copy_to_clipboard.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="pictures/beiteck_logo_icon.jpg">
+</head>
+<body>
+    <div class="intro">
+        <nav>
+            <a href="index.html"><img id="logo" src="pictures/beiteck_logo.png"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a id="active" href="buy.html">Buy</a></li>
+                <li><a href="rent.html">Rent</a></li>
+                <li><a href="about.html">About</a></li>
+                <div class="dropdown">
+                    <li>Agents <br><i class="fa fa-sort-desc" aria-hidden="true"></i></li>
+                    <div class="dropdown-content">
+                        <li><a href="agent.html">Find An Agent</a></li>
+                        <li><a href="agents_from_district.html">Agents From District</a></li>
+                    </div>
+                </div>
+                <li><a href="agencies.html">Agencies</a></li>
+                <li><a href="sell.html">Sell | Post A Listing</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="#footer">Contact</a></li><hr id="nav_hr">
+                <li><a id="after_hr" href="login.html">Login</a></li><hr id="nav_hr">
+                <li><a id="after_hr" href="signup.html">Sign Up</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Simulate a smartphone / tablet -->
+    <div class="mobile-container">
+
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+            <a href="index.html"><img id="logo_resp" src="pictures/beiteck_logo.png"></a>
+            <div id="myLinks">
+                <a href="index.html">Home</a>
+                <a id="active" href="buy.html">Buy</a>
+                <a href="rent.html">Rent</a>
+                <a href="about.html">About</a>
+                <a href="agent.html">Find An Agent</a>
+                <a href="agents_from_district.html">Agents From District</a>
+                <a href="agencies.html">Agencies</a>
+                <a href="sell.html">Sell | Post A Listing</a>
+                <a href="services.html">Services</a>
+                <a href="#footer">Contact</a><hr id="nav_hr">
+                <a href="login.html">Login</a><hr id="nav_hr">
+                <a href="signup.html">Sign Up</a>
+            </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        </div>
+        
+        <!-- End smartphone / tablet look -->
+        </div>
+
+        <div class="header">
+            <h1>Properties For Sale - Lebanon</h1>
+            <p>Looking for an apartment for sale in Lebanon? 
+                Real Estate Lebanon specializes in helping you 
+                find homes for sale in Beirut and Lebanon. 
+                The Lebanese real estate market boasts long-term 
+                value and a connection to a vibrant culture. 
+                Buying a home in the vibrant Achrafieh, modern 
+                Verdun or seaside Anfeh is an investment that 
+                ensures a stable future for your family and 
+                yourself while also assisting Lebanon's economy. 
+                Discover the possibilities for homeownership in 
+                Lebanon right now. </p>
+        </div>
+        <hr style="width: 80%; margin: 0 auto;">
+        <div class="filter">
+            <div class="search">
+                <form action="#">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <input type="search" placeholder="City in Lebanon">
+                </form>
+            </div>
+            <div class="select_option">
+                <select>
+                    <option selected>Buy</option>
+                    <option>Rent</option>
+                    <option>Commercial Buy</option>
+                    <option>Commercial Rent</option>
+                </select>
+                <select>
+                    <option selected>Property Type</option>
+                    <option>Apartment</option>
+                    <option>Land</option>
+                    <option>Whole Building</option>
+                    <option>Full Floor</option>
+                    <option>Penthouse</option>
+                    <option>Townhouse</option>
+                    <option>Duplex</option>
+                    <option>Hotel Apartments</option>
+                    <option>Half Floor</option>
+                    <option>Bulk Sale Units</option>
+                    <option>Villa</option>
+                    <option>Compound</option>
+                    <option>Chalet</option>
+                    <option>Triplex</option>
+                    <option>Loft</option>
+                </select>
+                <select>
+                        <option selected>Bedrooms</option>
+                        <option>Any</option>
+                        <option>+1</option>
+                        <option>+2</option>
+                        <option>+3</option>
+                        <option>+4</option>
+                        <option>+5</option>
+                        <option>+6</option>
+                        <option>+7</option>
+                </select>
+                <select>
+                    <option selected>Bathrooms</option>
+                    <option>Any</option>
+                    <option>+1</option>
+                    <option>+2</option>
+                    <option>+3</option>
+                    <option>+4</option>
+                    <option>+5</option>
+                    <option>+6</option>
+                    <option>+7</option>
+                </select>
+                <select>
+                    <option selected>Min. Price (USD $)</option>
+                    <option>$ 10,000</option>
+                    <option>$ 50,000</option>
+                    <option>$ 75,000</option>
+                    <option>$ 100,000</option>
+                </select>
+                <select>
+                    <option selected>Max. Price (USD $)</option>
+                    <option>$ 100,000</option>
+                    <option>$ 150,000</option>
+                    <option>$ 175,000</option>
+                    <option>$ 1,000,000</option>
+                </select>
+            </div>
+            <div class="find_btn">
+                <a href="#"><button>Find</button></a>
+            </div>
+        </div>
+
+        <div id="shadow_hr"></div>
+
+        <div class="sub_header">
+            <div class="save_search">
+                <a href="#"><button><i class="fa fa-star-o" aria-hidden="true"></i> Save Search</button></a>
+            </div>
+            <div class="sort">
+                <p>Sort by: </p>
+                <select>
+                    <option selected>Featured</option>
+                    <option>Newest</option>
+                    <option>Price (low)</option>
+                    <option>Price (high)</option>
+                    <option>Beds (least)</option>
+                    <option>Beds (most)</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="showing">
+            <p>showing <span>1</span> - <span>25</span> of <span>51534</span> properties</p>
+        </div>
+
+        <div class="cats">
+            <a href="buy_detail.html" title="view more images & details"><div class="cat">
+                <div class="campaign_logo">
+                    <img src="pictures/morton.png">
+                </div>
+                <img id="image" src="pictures/buy_img_1.jpeg">
+                <div class="cat_details">
+                    <h3>$ 1,300,000 USD</h3>
+                    <p>Achrafieh 500sqm | Carré D'or | Sea & City View</p>
+                    <p>Apartment, 4 bedrooms, 5 bathrooms</p>
+                    <p>Achrafieh, Beirut Governorate, Beirut District</p>
+                </div>
+                <div class="cat_btns">
+                    <a href="tel:+96176134251"><button><i class="fa fa-phone" aria-hidden="true"></i> Call</button></a>
+                    <a href="mailto:samertarhini14@gmail.com"><button><i class="fa fa-envelope" aria-hidden="true"></i> Enquire</button></a>
+                    <a href="#" onclick="copyToClipboard(window.location.href); return false;"><button><i class="fa fa-share" aria-hidden="true"></i> Share</button></a>
+                    <a href="#"><button><i class="fa fa-heart-o" aria-hidden="true"></i> Save</button></a>
+                </div>
+            </div></a>
+            <a href="buy_detail.html" title="view more images & details"><div class="cat">
+                <div class="campaign_logo">
+                    <img src="pictures/sydney_cove__property.png">
+                </div>
+                <img id="image" src="pictures/buy_img_2.jpeg">
+                <div class="cat_details">
+                    <h3>$ 760,000 USD</h3>
+                    <p>Achrafieh 500sqm | Carré D'or | Sea & City View</p>
+                    <p>Apartment, 3 bedrooms, 2 bathrooms</p>
+                    <p>Achrafieh, Beirut Governorate, Beirut District</p>
+                </div>
+                <div class="cat_btns">
+                    <a href="tel:+96176134251"><button><i class="fa fa-phone" aria-hidden="true"></i> Call</button></a>
+                    <a href="mailto:samertarhini14@gmail.com"><button><i class="fa fa-envelope" aria-hidden="true"></i> Enquire</button></a>
+                    <a href="#" onclick="copyToClipboard(window.location.href); return false;"><button><i class="fa fa-share" aria-hidden="true"></i> Share</button></a>
+                    <a href="#"><button><i class="fa fa-heart-o" aria-hidden="true"></i> Save</button></a>
+                </div>
+            </div></a>
+            <a href="buy_detail.html" title="view more images & details"><div class="cat">
+                <div class="campaign_logo">
+                    <img src="pictures/morton.png">
+                </div>
+                <img id="image" src="pictures/buy_img_3.jpeg">
+                <div class="cat_details">
+                    <h3>$ 1,900,000 USD</h3>
+                    <p>Achrafieh 500sqm | Carré D'or | Sea & City View</p>
+                    <p>House, 4 bedrooms, 3 bathrooms</p>
+                    <p>Achrafieh, Beirut Governorate, Beirut District</p>
+                </div>
+                <div class="cat_btns">
+                    <a href="tel:+96176134251"><button><i class="fa fa-phone" aria-hidden="true"></i> Call</button></a>
+                    <a href="mailto:samertarhini14@gmail.com"><button><i class="fa fa-envelope" aria-hidden="true"></i> Enquire</button></a>
+                    <a href="#" onclick="copyToClipboard(window.location.href); return false;"><button><i class="fa fa-share" aria-hidden="true"></i> Share</button></a>
+                    <a href="#"><button><i class="fa fa-heart-o" aria-hidden="true"></i> Save</button></a>
+                </div>
+            </div></a>
+            <a href="buy_detail.html" title="view more images & details"><div class="cat">
+                <div class="campaign_logo">
+                    <img src="pictures/sydney_cove__property.png">
+                </div>
+                <img id="image" src="pictures/buy_img_4.jpeg">
+                <div class="cat_details">
+                    <h3>$ 1,100,000 USD</h3>
+                    <p>Achrafieh 500sqm | Carré D'or | Sea & City View</p>
+                    <p>Apartment, 4 bedrooms, 2 bathrooms</p>
+                    <p>Achrafieh, Beirut Governorate, Beirut District</p>
+                </div>
+                <div class="cat_btns">
+                    <a href="tel:+96176134251"><button><i class="fa fa-phone" aria-hidden="true"></i> Call</button></a>
+                    <a href="mailto:samertarhini14@gmail.com"><button><i class="fa fa-envelope" aria-hidden="true"></i> Enquire</button></a>
+                    <a href="#" onclick="copyToClipboard(window.location.href); return false;"><button><i class="fa fa-share" aria-hidden="true"></i> Share</button></a>
+                    <a href="#"><button><i class="fa fa-heart-o" aria-hidden="true"></i> Save</button></a>
+                </div>
+            </div></a>
+
+        </div>
+
+        <hr id="in_between">
+
+        <div class="cats">
+            <a href="buy_detail.html" title="view more images & details"><div class="cat">
+                <div class="campaign_logo">
+                    <img src="pictures/morton.png">
+                </div>
+                <img id="image" src="pictures/buy_img_1.jpeg">
+                <div class="cat_details">
+                    <h3>$ 1,300,000 USD</h3>
+                    <p>Achrafieh 500sqm | Carré D'or | Sea & City View</p>
+                    <p>Apartment, 4 bedrooms, 5 bathrooms</p>
+                    <p>Achrafieh, Beirut Governorate, Beirut District</p>
+                </div>
+                <div class="cat_btns">
+                    <a href="tel:+96176134251"><button><i class="fa fa-phone" aria-hidden="true"></i> Call</button></a>
+                    <a href="mailto:samertarhini14@gmail.com"><button><i class="fa fa-envelope" aria-hidden="true"></i> Enquire</button></a>
+                    <a href="#" onclick="copyToClipboard(window.location.href); return false;"><button><i class="fa fa-share" aria-hidden="true"></i> Share</button></a>
+                    <a href="#"><button><i class="fa fa-heart-o" aria-hidden="true"></i> Save</button></a>
+                </div>
+            </div></a>
+            <a href="buy_detail.html" title="view more images & details"><div class="cat">
+                <div class="campaign_logo">
+                    <img src="pictures/sydney_cove__property.png">
+                </div>
+                <img id="image" src="pictures/buy_img_2.jpeg">
+                <div class="cat_details">
+                    <h3>$ 760,000 USD</h3>
+                    <p>Achrafieh 500sqm | Carré D'or | Sea & City View</p>
+                    <p>Apartment, 3 bedrooms, 2 bathrooms</p>
+                    <p>Achrafieh, Beirut Governorate, Beirut District</p>
+                </div>
+                <div class="cat_btns">
+                    <a href="tel:+96176134251"><button><i class="fa fa-phone" aria-hidden="true"></i> Call</button></a>
+                    <a href="mailto:samertarhini14@gmail.com"><button><i class="fa fa-envelope" aria-hidden="true"></i> Enquire</button></a>
+                    <a href="#" onclick="copyToClipboard(window.location.href); return false;"><button><i class="fa fa-share" aria-hidden="true"></i> Share</button></a>
+                    <a href="#"><button><i class="fa fa-heart-o" aria-hidden="true"></i> Save</button></a>
+                </div>
+            </div></a>
+            <a href="buy_detail.html" title="view more images & details"><div class="cat">
+                <div class="campaign_logo">
+                    <img src="pictures/morton.png">
+                </div>
+                <img id="image" src="pictures/buy_img_3.jpeg">
+                <div class="cat_details">
+                    <h3>$ 1,900,000 USD</h3>
+                    <p>Achrafieh 500sqm | Carré D'or | Sea & City View</p>
+                    <p>House, 4 bedrooms, 3 bathrooms</p>
+                    <p>Achrafieh, Beirut Governorate, Beirut District</p>
+                </div>
+                <div class="cat_btns">
+                    <a href="tel:+96176134251"><button><i class="fa fa-phone" aria-hidden="true"></i> Call</button></a>
+                    <a href="mailto:samertarhini14@gmail.com"><button><i class="fa fa-envelope" aria-hidden="true"></i> Enquire</button></a>
+                    <a href="#" onclick="copyToClipboard(window.location.href); return false;"><button><i class="fa fa-share" aria-hidden="true"></i> Share</button></a>
+                    <a href="#"><button><i class="fa fa-heart-o" aria-hidden="true"></i> Save</button></a>
+                </div>
+            </div></a>
+            <a href="buy_detail.html" title="view more images & details"><div class="cat">
+                <div class="campaign_logo">
+                    <img src="pictures/sydney_cove__property.png">
+                </div>
+                <img id="image" src="pictures/buy_img_4.jpeg">
+                <div class="cat_details">
+                    <h3>$ 1,100,000 USD</h3>
+                    <p>Achrafieh 500sqm | Carré D'or | Sea & City View</p>
+                    <p>Apartment, 4 bedrooms, 2 bathrooms</p>
+                    <p>Achrafieh, Beirut Governorate, Beirut District</p>
+                </div>
+                <div class="cat_btns">
+                    <a href="tel:+96176134251"><button><i class="fa fa-phone" aria-hidden="true"></i> Call</button></a>
+                    <a href="mailto:samertarhini14@gmail.com"><button><i class="fa fa-envelope" aria-hidden="true"></i> Enquire</button></a>
+                    <a href="#" onclick="copyToClipboard(window.location.href); return false;"><button><i class="fa fa-share" aria-hidden="true"></i> Share</button></a>
+                    <a href="#"><button><i class="fa fa-heart-o" aria-hidden="true"></i> Save</button></a>
+                </div>
+            </div></a>
+
+        </div>
+
+            <hr id="final_hr">
+            <div class="last">
+                <div class="pages">
+                    <div class="pages_btns">
+                        <a id="pages_active" href="#"><button>1</button></a>
+                        <a href="#"><button>2</button></a>
+                        <p>...</p>
+                        <a href="#"><button>14</button></a>
+                        <a href="#"><button id="next">Next <i class="fa fa-angle-right" aria-hidden="true"></i></button></a>
+                    </div>
+                </div>
+                <div class="results">
+                    <p>showing <span>1</span> - <span>25</span> of <span>51534</span> results</p>
+                </div>
+            </div>
+
+        <section class="footer" id="footer">
+            <div class="footer-row">
+              <div class="footer-col">
+                    <a href="index.html#home">
+                        <img src="pictures/beiteck_logo.png">
+                    </a>
+                    <ul class="links">
+                        <li><i class="fa fa-angle-right" aria-hidden="true"></i>
+                        <a href="privacy_policy.html"> Privacy Policy</a>
+                        </li>
+                        <li><i class="fa fa-angle-right" aria-hidden="true"></i>
+                            <a href="terms_conditions.html"> Terms & Conditions</a>
+                            </li>
+                    </ul>
+              </div>
+              <div class="footer-col">
+                <h4><i class="fa fa-address-book" aria-hidden="true"></i> Contact Us</h4>
+                <ul class="links">
+                    <li><i class="fa fa-phone" aria-hidden="true"></i>
+                        <a href="tel:+96176134251">+961 76 134 251</a>
+                    </li>
+                    <li><i class="fa fa-envelope" aria-hidden="true"></i>
+                        <a href="mailto:samertarhini14@gmail.com">samertarhini14@gmail.com</a>
+                    </li>
+                    <h4 style="padding-top: 30px;"><i class="fa fa-globe" aria-hidden="true"></i> Social</h4>
+                    <div class="icons">
+                        <a href="https://www.facebook.com/">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="https://www.twitter.com/">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                        <a href="https://www.google.com/">
+                            <i class="fa fa-google"></i>
+                        </a>
+                    </div>
+                    <!-- <li><a href="#">Compressions</a></li>
+                    <li><a href="#">Customers</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Collection</a></li> -->
+                </ul>
+              </div>
+              <div class="footer-col">
+                <h4><i class="fa fa-address-card" aria-hidden="true"></i> Office Address</h4>
+                <ul class="links">
+                    <li><i class="fa fa-map" aria-hidden="true"></i> Lebanon, Nabatieh.. </li>
+                    <li><i class="fa fa-link" aria-hidden="true"></i>
+                        <a href="https://www.maps.google.com/"> Location</a></li>
+                    <li><i class="fa fa-map-marker" aria-hidden="true"></i> Bla Bla Street</li>
+                    <!-- <li><a href="#">Popular Designs</a></li>
+                    <li><a href="#">Art Skills</a></li>
+                    <li><a href="#">New Uploads</a></li> class="fa fa-link" imam sader street -->
+                </ul>
+              </div>
+              <!-- <div class="footer-col">
+                <h4><i class="fa fa-clock-o" aria-hidden="true"></i> Open Days | Hours</h4>
+                <ul class="links">
+                    <li><i class="fa fa-check" aria-hidden="true"></i> Monday | 8 AM - 10 PM</li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> Tuesday | 8 AM - 10 PM</li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> Wednesday | 8 AM - 10 PM</li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> Thursday | 8 AM - 10 PM</li>
+                    <li><i class="fa fa-times" aria-hidden="true"></i> Friday | Closed</li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> Saturday | 8 AM - 10 PM</li>
+                    <li><i class="fa fa-check" aria-hidden="true"></i> Sunday | 8 AM - 10 PM</li>
+                </ul>
+              </div> -->
+              <div class="footer-col">
+                <h4><i class="fa fa-list-ul" aria-hidden="true"></i> About Us</h4>
+                <p>
+                  <!-- Subscribe to our newsletter for a weekly dose
+                  of news, updates, helpful tips, and
+                  exclusive offers. -->
+                    We're here to help you and give the best as possible to provide you with the 
+                    suitable apartment to buy, rent, view, or even sell.. 
+                </p>
+                <form action="#home">
+                  <input type="text" placeholder="Any Comments.." title="Any Comments? Just tell us to help doing better (Optional)" required>
+                  <button type="submit">Submit</button>
+                </form>
+              </div>
+            </div>
+        </section>
+    
+        <h3 id="thanks">Thanks For Being Here! <br>We Appreciate Your Visit.. </h3>
+        <h3 id="copyright">Designed & Developed By "Samer Trh" <br><i class="fa fa-copyright" aria-hidden="true"></i> 2024 | All Rights Reserved</h3>
+    
+</body>
+</html>

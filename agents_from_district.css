@@ -1,0 +1,676 @@
+.agent_from {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+}
+
+.agent_from p {
+    color: var(--c7);
+    margin: 0 10px;
+}
+
+.agent_from .fa {
+    color: var(--c7);
+}
+
+.agent_from #district {
+    color: var(--c13);
+}
+
+#shadow_hr {
+    background-color: var(--c9);
+    height: 3px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.agent_filters {
+    width: 80%;
+    margin: 30px auto;
+}
+
+.agent_filters h2 {
+    margin: 30px 0;
+    color: var(--c1);
+    padding: 5px;
+    border-left: 3px solid var(--c2);
+}
+
+.agent_filters h2 span {
+    border-bottom: 2px solid var(--c2);
+}
+
+.agent_filters h4 {
+    margin: 10px 0;
+    color: var(--c1);
+}
+
+.agent_filters .first_row_filter {
+    display: flex;
+    width: 100%;
+}
+
+.agent_filters .first_row_filter .agent_btns {
+    /* margin-left: 20px;
+    margin-right: 20px; */
+    width: 50%;
+    display: flex;
+    text-align: center;
+}
+
+.agent_filters .first_row_filter .agent_btns a {
+    text-decoration: none;
+}
+
+.agent_filters .first_row_filter .agent_btns a button {
+    width: 100%;
+    cursor: pointer;
+    padding: 16px 40px;
+    border: 1px solid var(--c9);
+    border-radius: 10px;
+    font-size: var(--s1);
+}
+
+.agent_filters .first_row_filter .agent_btns a #agents {
+    background-color: var(--c1);
+    color: var(--c4);
+    cursor: default;
+}
+
+.agent_filters .first_row_filter .agent_btns a #agencies {
+    background-color: var(--c14);
+    color: var(--c1);
+    margin-left: 5px;
+}
+
+.agent_filters .first_row_filter .agent_btns a #agencies:hover {
+    background-color: var(--c10);
+}
+
+.agent_filters .first_row_filter .search_district_bar {
+    /* margin-left: 20px;
+    margin-right: 20px; */
+    width: 50%;
+    display: flex;
+    border: 2px solid var(--c2);
+    border-radius: 10px;
+}
+
+.agent_filters .first_row_filter .search_district_bar .fa {
+    padding: 15px;
+    color: var(--c1);
+}
+
+.agent_filters .first_row_filter .search_district_bar input {
+    width: 90%;
+    border: none;
+    color: var(--c13);
+    caret-color: var(--c2);
+    font-size: var(--s1);
+}
+
+.agent_filters .first_row_filter .search_district_bar input:focus {
+    outline: none;
+}
+
+.agent_filters .first_row_filter .search_district_bar input[type="search"]::-webkit-search-cancel-button {
+    cursor: pointer;
+    padding: 3px;
+}
+
+.agent_filters .second_row_filter {
+    display: block;
+    width: 30%;
+}
+
+.agent_filters .second_row_filter select {
+    width: 100%;
+    font-size: var(--s2);
+    font-family: var(--f1);
+    background-color: var(--c14);
+    border: 2px solid var(--c2);
+    border-radius: 10px;
+    color: var(--c1);
+    padding: 8px 16px;
+    cursor: pointer;
+    
+    /* -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url ('custom-arrow.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 20px; */
+
+}
+
+.agent_filters .second_row_filter select:hover {
+    background-color: var(--c10);
+}
+
+    /* Change the color of the arrow
+
+    .agent_filters .second_row_filter select::-ms-expand, .agent_filters .second_row_filter select::-webkit-select {
+        background-color: var(--c2); 
+        Replace with your desired color
+    } */
+
+.agent_filters .second_row_filter select:focus {
+    outline: none;
+}
+
+/* .agent_filters .second_row_filter select option {
+    color: var(--c2);
+    padding: 8px 16px;
+    cursor: pointer;
+} */
+
+.agent_filters .third_row_filter {
+    width: 100%;
+}
+
+.agent_filters .third_row_filter .sales_btns {
+    width: fit-content;
+    cursor: default;
+}
+
+.agent_filters .third_row_filter .sales_btns a {
+    cursor: default;
+    margin: 0 5px;
+}
+
+.agent_filters .third_row_filter .sales_btns a button {
+    color: var(--c1);
+    cursor: pointer;
+    /* margin: 0 5px; */
+    padding: 10px 16px;
+    border: 1px solid var(--c9);
+    border-radius: 5px;
+    font-size: var(--s1);
+}
+
+.agent_filters .third_row_filter .sales_btns a button:hover {
+    background-color: var(--c10);
+}
+
+.agent_filters .fourth_row_filter {
+    display: block;
+    width: 30%;
+}
+
+.agent_filters .fourth_row_filter select {
+    width: 100%;
+    font-size: var(--s2);
+    font-family: var(--f1);
+    background-color: var(--c14);
+    border: 2px solid var(--c2);
+    border-radius: 10px;
+    color: var(--c1);
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.agent_filters .fourth_row_filter select:hover {
+    background-color: var(--c10);
+}
+
+.agent_filters .fourth_row_filter select:focus {
+    outline: none;
+}
+
+.showing_results {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+}
+
+.showing_results p {
+    color: var(--c13);
+    margin: 0 10px;
+}
+
+.showing_results #results {
+    color: var(--c7);
+}
+
+.i {
+    width: 20%;
+    margin: 20px auto;
+    /* display: inline-block; */
+    position: relative;
+}
+
+.i p {
+    color: var(--c7);
+    margin: 0 10px;
+}
+
+.i p span {
+    border: none;
+    margin-left: 5px;
+    /* padding-left: 5px; */
+    /* background-color: var(--c7); */
+}
+
+.i p span .fa {
+    font-size: var(--s1);
+    color: var(--c7);
+    padding: 5px 10px;
+    border-radius: 50%;
+    border: 1px solid var(--c7);
+    background-color: var(--c14);
+}
+  
+.tooltip {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    z-index: 2;
+    top: 30px;
+    left: 150px;
+    width: 150px;
+    background-color: var(--c10);
+    color: var(--c7);
+    font-size: var(--s2);
+    padding: 20px;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s, visibility 0s linear 0.3s;
+}
+
+.tooltip span {
+    font-size: var(--s1);
+}
+  
+.i:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s;
+}
+
+.agent_cats {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.agent_cat {
+    width: 100%;
+    border: 1px solid var(--c2);
+    padding-bottom: 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+    border-bottom: 1px solid var(--c2);
+    box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.3);
+}
+
+.agent_cat .campaign_logo {
+    width: 100%;
+    height: 30px;
+    padding: 10px 0;
+    background-color: var(--c2);
+}
+
+.agent_cat .campaign_logo img {
+    height: 100%;
+    margin-left: 30px;
+}
+
+.agent_cat .agent_info {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    /* text-align: center; */
+}
+
+.agent_cat .agent_info #profile_pic {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 10px 20px;
+}
+
+.agent_cat .agent_info .agent_details {
+    width: 100%;
+}
+
+.agent_cat .agent_info .agent_details a {
+    text-decoration: none;
+    cursor: default;
+}
+
+.agent_cat .agent_info .agent_details h3 {
+    color: var(--c1);
+    margin: 15px 0;
+    border-left: 3px solid var(--c2);
+    padding-left: 5px;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.agent_cat .agent_info .agent_details p {
+    margin: 5px 0;
+    color: var(--c13);
+}
+
+.agent_cat .agent_info .agent_details .fa {
+    color: var(--c2);
+}
+
+.agent_cat .agent_info .agent_details span {
+    color: var(--c7);
+}
+
+.agent_additional_infos {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.agent_additional_infos .agent_achievements {
+    display: flex;
+}
+
+.agent_additional_infos .agent_achievements .agent_achievements_details {
+    color: var(--c13);
+    padding: 10px;
+    background-color: var(--c14);
+    border-radius: 10px;
+}
+
+.agent_additional_infos .agent_achievements .agent_achievements_details span {
+    color: var(--c7);
+}
+
+.agent_additional_infos .agent_achievements .agent_achievements_nbs {
+    display: flex;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.agent_additional_infos .agent_achievements .agent_achievements_nbs p {
+    padding: 10px;
+}
+
+.agent_additional_infos .agent_achievements .agent_suburbs {
+    color: var(--c13);
+    padding: 10px;
+    background-color: var(--c14);
+    border-radius: 10px;
+    margin: 0 20px;
+}
+
+.agent_additional_infos .agent_achievements .agent_suburbs span {
+    color: var(--c7);
+}
+
+.agent_additional_infos .agent_achievements .agent_achievements_btn {
+    padding: 10px;
+}
+
+.agent_additional_infos .agent_achievements .agent_achievements_btn a button {
+    width: 180px;
+    height: 80px;
+    /* padding: 25px 40px; */
+    background-color: var(--c14);
+    color: var(--c7);
+    border: 1px solid var(--c2);
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: var(--f1);
+    font-size: var(--s2);
+}
+
+.agent_additional_infos .agent_achievements .agent_achievements_btn a button:hover {
+    background-color: var(--c10);
+}
+
+.agent_rating {
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    color: var(--c7);
+    background-color: var(--c14);
+    border-radius: 10px;
+}
+
+.agent_rating .agent_rating_header {
+    display: flex;
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px 0;
+    font-size: var(--s1);
+}
+
+.agent_rating .agent_rating_header .fa {
+    color: var(--c2);
+}
+
+.agent_rating .agent_rating_header p {
+    padding-left: 10px;
+}
+
+.agent_rating .agent_rating_header #stars {
+    margin-left: 5px;
+}
+
+.agent_rating .agent_rating_header #verified {
+    position: absolute;
+    float: right;
+    right: 20%;
+}
+
+.agent_rating .agent_rating_header #verified .fa {
+    padding-right: 10px;
+}
+
+.agent_rating #agent_rating_text {
+    margin: 10px 0;
+    line-height: 25px;
+    font-size: var(--s2);
+    overflow: auto;
+    padding: 0 10px;
+    color: var(--c13);
+}
+
+.last {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.last .pages {
+    width: 100%;
+    display: flex;
+    margin: 20px 0;
+}
+
+.last .pages .pages_btns {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+
+.last .pages a {
+    width: fit-content;
+    text-decoration: none;
+}
+
+.last .pages a button {
+    padding: 10px 15px;
+    background-color: var(--c14);
+    color: var(--c7);
+    border: 2px solid var(--c9);
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: var(--f1);
+    font-size: var(--s2);
+    margin: 0 5px;
+}
+
+.last .pages a button:hover {
+    border: 2px solid var(--c8);
+    background-color: var(--c10);
+}
+
+.last .pages .pages_btns p {
+    padding: 10px 15px;
+    color: var(--c7);
+}
+
+.last .pages a #next {
+    background-color: var(--c1);
+    color: var(--c2);
+    border: 2px solid var(--c1);
+}
+
+.last .pages a #next:hover {
+    text-decoration: underline var(--c2);
+}
+
+.last .pages #pages_active button {
+    background-color: var(--c1);
+    color: var(--c2);
+    border: 2px solid var(--c1);
+}
+
+.last .pages #pages_active button:hover {
+    text-decoration: underline var(--c2);
+}
+
+.last .results {
+    padding: 20px 0;
+}
+
+.last .results p {
+    color: var(--c13);
+}
+
+.last .results p span {
+    color: var(--c7);
+}
+
+@media screen and (max-width: 414px) {
+    .agent_filters .first_row_filter {
+        display: block;
+    }
+    .agent_filters .first_row_filter .agent_btns {
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+    .agent_filters .first_row_filter .agent_btns a #agencies {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    .agent_filters .first_row_filter .search_district_bar {
+        width: 100%;
+        display: flex;
+        margin-top: 10px;
+    }
+    .agent_filters .second_row_filter {
+        width: 100%;
+    }
+    .agent_filters .third_row_filter .sales_btns a {
+        cursor: default;
+        margin: 0;
+    }
+    .agent_filters .third_row_filter .sales_btns a button {
+        color: var(--c1);
+        cursor: pointer;
+        margin: 5px;
+        padding: 10px 16px;
+        border: 1px solid var(--c9);
+        border-radius: 5px;
+        font-size: var(--s1);
+    }
+    .agent_filters .fourth_row_filter {
+        width: 100%;
+    }
+    .i {
+        width: 80%;
+    }
+    .agent_cats {
+        width: 90%;
+    }
+    .agent_cat .agent_info {
+        width: 90%;
+    }
+    .agent_additional_infos {
+        width: 90%;
+    }
+    .agent_additional_infos .agent_achievements {
+        display: block;
+    }
+    .agent_additional_infos .agent_achievements .agent_achievements_nbs {
+        display: flex;
+        text-align: center;
+        margin: 0 5px;
+        width: 100%;
+        overflow: auto;
+    }
+    .agent_additional_infos .agent_achievements .agent_suburbs {
+        margin: 10px 20px;
+        text-align: center;
+    }
+    .agent_additional_infos .agent_achievements .agent_suburbs span {
+        color: var(--c7);
+    }
+    .agent_additional_infos .agent_achievements .agent_suburbs p {
+        margin: 0 auto;
+        display: block;
+    }
+    .agent_additional_infos .agent_achievements .agent_achievements_btn {
+        padding: 10px;
+        width: 90%;
+    }
+    .agent_additional_infos .agent_achievements .agent_achievements_btn a {
+        text-decoration: none;
+    }
+    .agent_additional_infos .agent_achievements .agent_achievements_btn a button {
+        width: 180px;
+        height: 80px;
+        display: block;
+        margin: 0 auto;
+    }
+    .agent_rating {
+        width: 90%;
+        margin: 10px auto;
+        padding: 10px;
+    }
+    .agent_rating .agent_rating_header {
+        display: block;
+        width: 100%;
+        margin: 5px 0;
+        padding: 10px 0;
+    }
+    .agent_rating .agent_rating_header #verified {
+        position: relative;
+        float: right;
+        right: 0;
+        margin-top: 5px;
+    }
+    .agent_rating #agent_rating_text {
+        margin: 20px 0;
+        line-height: 25px;
+        font-size: var(--s2);
+        overflow: auto;
+        padding: 0 10px;
+        color: var(--c13);
+    }
+    .last {
+        width: 90%;
+        margin: 20px auto;
+    }
+    .last .pages {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .last .pages .pages_btns {
+        display: flex;
+    }
+    .last .pages a button {
+        padding: 5px 10px;
+        font-size: var(--s1);
+    }
+}
